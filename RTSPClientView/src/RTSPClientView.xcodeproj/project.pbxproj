@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C6702FF165B5E0B0034EAE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6702FE165B5E0B0034EAE7 /* Foundation.framework */; };
+		8C670304165B5E0B0034EAE7 /* RTSPClientView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C670303165B5E0B0034EAE7 /* RTSPClientView.h */; };
+		8C670306165B5E0B0034EAE7 /* RTSPClientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C670305165B5E0B0034EAE7 /* RTSPClientView.m */; };
+		8C67030D165B5E690034EAE7 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C67030C165B5E690034EAE7 /* libz.1.2.5.dylib */; };
+		8C67030F165B5E6F0034EAE7 /* libdl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C67030E165B5E6F0034EAE7 /* libdl.dylib */; };
+		8C8BB33C1745C06E0024B8BC /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB3341745C06E0024B8BC /* libavcodec.a */; };
+		8C8BB33D1745C06E0024B8BC /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB3351745C06E0024B8BC /* libavdevice.a */; };
+		8C8BB33E1745C06E0024B8BC /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB3361745C06E0024B8BC /* libavfilter.a */; };
+		8C8BB33F1745C06E0024B8BC /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB3371745C06E0024B8BC /* libavformat.a */; };
+		8C8BB3401745C06E0024B8BC /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB3381745C06E0024B8BC /* libavutil.a */; };
+		8C8BB3411745C06E0024B8BC /* libpostproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB3391745C06E0024B8BC /* libpostproc.a */; };
+		8C8BB3421745C06E0024B8BC /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB33A1745C06E0024B8BC /* libswresample.a */; };
+		8C8BB3431745C06E0024B8BC /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB33B1745C06E0024B8BC /* libswscale.a */; };
+		8C8BB3441745C07F0024B8BC /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB3341745C06E0024B8BC /* libavcodec.a */; };
+		8C8BB3451745C07F0024B8BC /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB3351745C06E0024B8BC /* libavdevice.a */; };
+		8C8BB3461745C07F0024B8BC /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB3361745C06E0024B8BC /* libavfilter.a */; };
+		8C8BB3471745C07F0024B8BC /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB3371745C06E0024B8BC /* libavformat.a */; };
+		8C8BB3481745C07F0024B8BC /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB3381745C06E0024B8BC /* libavutil.a */; };
+		8C8BB3491745C07F0024B8BC /* libpostproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB3391745C06E0024B8BC /* libpostproc.a */; };
+		8C8BB34A1745C07F0024B8BC /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB33A1745C06E0024B8BC /* libswresample.a */; };
+		8C8BB34B1745C07F0024B8BC /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8BB33B1745C06E0024B8BC /* libswscale.a */; };
+		8CC6F80C16673D5400FC98BD /* RTSPClientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C670305165B5E0B0034EAE7 /* RTSPClientView.m */; };
+		8CCA0BFF165B600500D9A5D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCA0BFE165B600500D9A5D7 /* UIKit.framework */; };
+		8CCA0C00165B600500D9A5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6702FE165B5E0B0034EAE7 /* Foundation.framework */; };
+		8CCA0C02165B600500D9A5D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCA0C01165B600500D9A5D7 /* CoreGraphics.framework */; };
+		8CCA0C08165B600500D9A5D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CCA0C06165B600500D9A5D7 /* InfoPlist.strings */; };
+		8CCA0C0A165B600500D9A5D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA0C09165B600500D9A5D7 /* main.m */; };
+		8CCA0C0E165B600500D9A5D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA0C0D165B600500D9A5D7 /* AppDelegate.m */; };
+		8CCA0C10165B600500D9A5D7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CCA0C0F165B600500D9A5D7 /* Default.png */; };
+		8CCA0C12165B600500D9A5D7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CCA0C11165B600500D9A5D7 /* Default@2x.png */; };
+		8CCA0C14165B600500D9A5D7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CCA0C13165B600500D9A5D7 /* Default-568h@2x.png */; };
+		8CCA0C17165B600500D9A5D7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCA0C15165B600500D9A5D7 /* MainStoryboard_iPhone.storyboard */; };
+		8CCA0C1A165B600500D9A5D7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCA0C18165B600500D9A5D7 /* MainStoryboard_iPad.storyboard */; };
+		8CCA0C1D165B600500D9A5D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA0C1C165B600500D9A5D7 /* ViewController.m */; };
+		8CCA0C24165B612200D9A5D7 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C67030C165B5E690034EAE7 /* libz.1.2.5.dylib */; };
+		8CCA0C25165B612B00D9A5D7 /* libdl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C67030E165B5E6F0034EAE7 /* libdl.dylib */; };
+		8CF534641739FCC900BCF1F2 /* libbz2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF534631739FCC900BCF1F2 /* libbz2.1.0.dylib */; };
+		8CF534701739FE1B00BCF1F2 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF5346F1739FE1B00BCF1F2 /* libiconv.dylib */; };
+		8CF534791739FF4B00BCF1F2 /* libbz2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF534631739FCC900BCF1F2 /* libbz2.1.0.dylib */; };
+		8CF5347A1739FF5400BCF1F2 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF5346F1739FE1B00BCF1F2 /* libiconv.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C6702F9165B5E0B0034EAE7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				8C670304165B5E0B0034EAE7 /* RTSPClientView.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8C6702FB165B5E0B0034EAE7 /* libRTSPClientView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRTSPClientView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6702FE165B5E0B0034EAE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8C670302165B5E0B0034EAE7 /* RTSPClientView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTSPClientView-Prefix.pch"; sourceTree = "<group>"; };
+		8C670303165B5E0B0034EAE7 /* RTSPClientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTSPClientView.h; sourceTree = "<group>"; };
+		8C670305165B5E0B0034EAE7 /* RTSPClientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTSPClientView.m; sourceTree = "<group>"; };
+		8C67030C165B5E690034EAE7 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		8C67030E165B5E6F0034EAE7 /* libdl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdl.dylib; path = usr/lib/libdl.dylib; sourceTree = SDKROOT; };
+		8C8BB3341745C06E0024B8BC /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = lib/ffmpeg/libavcodec.a; sourceTree = "<group>"; };
+		8C8BB3351745C06E0024B8BC /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = lib/ffmpeg/libavdevice.a; sourceTree = "<group>"; };
+		8C8BB3361745C06E0024B8BC /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = lib/ffmpeg/libavfilter.a; sourceTree = "<group>"; };
+		8C8BB3371745C06E0024B8BC /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = lib/ffmpeg/libavformat.a; sourceTree = "<group>"; };
+		8C8BB3381745C06E0024B8BC /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = lib/ffmpeg/libavutil.a; sourceTree = "<group>"; };
+		8C8BB3391745C06E0024B8BC /* libpostproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpostproc.a; path = lib/ffmpeg/libpostproc.a; sourceTree = "<group>"; };
+		8C8BB33A1745C06E0024B8BC /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = lib/ffmpeg/libswresample.a; sourceTree = "<group>"; };
+		8C8BB33B1745C06E0024B8BC /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = lib/ffmpeg/libswscale.a; sourceTree = "<group>"; };
+		8CCA0BFC165B600500D9A5D7 /* RTSPClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTSPClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CCA0BFE165B600500D9A5D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8CCA0C01165B600500D9A5D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8CCA0C05165B600500D9A5D7 /* RTSPClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RTSPClient-Info.plist"; sourceTree = "<group>"; };
+		8CCA0C07165B600500D9A5D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8CCA0C09165B600500D9A5D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CCA0C0B165B600500D9A5D7 /* RTSPClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTSPClient-Prefix.pch"; sourceTree = "<group>"; };
+		8CCA0C0C165B600500D9A5D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8CCA0C0D165B600500D9A5D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8CCA0C0F165B600500D9A5D7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8CCA0C11165B600500D9A5D7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8CCA0C13165B600500D9A5D7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8CCA0C16165B600500D9A5D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		8CCA0C19165B600500D9A5D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		8CCA0C1B165B600500D9A5D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8CCA0C1C165B600500D9A5D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8CCA0C92165CA59100D9A5D7 /* libRTSPClientView-i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libRTSPClientView-i386.a"; path = "lib/libRTSPClientView-i386.a"; sourceTree = "<group>"; };
+		8CCA0C93165CA59200D9A5D7 /* libRTSPClientView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRTSPClientView.a; path = lib/libRTSPClientView.a; sourceTree = "<group>"; };
+		8CF534631739FCC900BCF1F2 /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = usr/lib/libbz2.1.0.dylib; sourceTree = SDKROOT; };
+		8CF5346F1739FE1B00BCF1F2 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C6702F8165B5E0B0034EAE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C8BB33C1745C06E0024B8BC /* libavcodec.a in Frameworks */,
+				8C8BB33D1745C06E0024B8BC /* libavdevice.a in Frameworks */,
+				8C8BB33E1745C06E0024B8BC /* libavfilter.a in Frameworks */,
+				8C8BB33F1745C06E0024B8BC /* libavformat.a in Frameworks */,
+				8C8BB3401745C06E0024B8BC /* libavutil.a in Frameworks */,
+				8C8BB3411745C06E0024B8BC /* libpostproc.a in Frameworks */,
+				8C8BB3421745C06E0024B8BC /* libswresample.a in Frameworks */,
+				8C8BB3431745C06E0024B8BC /* libswscale.a in Frameworks */,
+				8CF5347A1739FF5400BCF1F2 /* libiconv.dylib in Frameworks */,
+				8CF534791739FF4B00BCF1F2 /* libbz2.1.0.dylib in Frameworks */,
+				8C67030F165B5E6F0034EAE7 /* libdl.dylib in Frameworks */,
+				8C67030D165B5E690034EAE7 /* libz.1.2.5.dylib in Frameworks */,
+				8C6702FF165B5E0B0034EAE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCA0BF9165B600500D9A5D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C8BB3441745C07F0024B8BC /* libavcodec.a in Frameworks */,
+				8C8BB3451745C07F0024B8BC /* libavdevice.a in Frameworks */,
+				8C8BB3461745C07F0024B8BC /* libavfilter.a in Frameworks */,
+				8C8BB3471745C07F0024B8BC /* libavformat.a in Frameworks */,
+				8C8BB3481745C07F0024B8BC /* libavutil.a in Frameworks */,
+				8C8BB3491745C07F0024B8BC /* libpostproc.a in Frameworks */,
+				8C8BB34A1745C07F0024B8BC /* libswresample.a in Frameworks */,
+				8C8BB34B1745C07F0024B8BC /* libswscale.a in Frameworks */,
+				8CF534701739FE1B00BCF1F2 /* libiconv.dylib in Frameworks */,
+				8CF534641739FCC900BCF1F2 /* libbz2.1.0.dylib in Frameworks */,
+				8CCA0C25165B612B00D9A5D7 /* libdl.dylib in Frameworks */,
+				8CCA0C24165B612200D9A5D7 /* libz.1.2.5.dylib in Frameworks */,
+				8CCA0BFF165B600500D9A5D7 /* UIKit.framework in Frameworks */,
+				8CCA0C00165B600500D9A5D7 /* Foundation.framework in Frameworks */,
+				8CCA0C02165B600500D9A5D7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C6702F0165B5E0B0034EAE7 = {
+			isa = PBXGroup;
+			children = (
+				8C8BB3341745C06E0024B8BC /* libavcodec.a */,
+				8C8BB3351745C06E0024B8BC /* libavdevice.a */,
+				8C8BB3361745C06E0024B8BC /* libavfilter.a */,
+				8C8BB3371745C06E0024B8BC /* libavformat.a */,
+				8C8BB3381745C06E0024B8BC /* libavutil.a */,
+				8C8BB3391745C06E0024B8BC /* libpostproc.a */,
+				8C8BB33A1745C06E0024B8BC /* libswresample.a */,
+				8C8BB33B1745C06E0024B8BC /* libswscale.a */,
+				8CF5346F1739FE1B00BCF1F2 /* libiconv.dylib */,
+				8CF534631739FCC900BCF1F2 /* libbz2.1.0.dylib */,
+				8CCA0C92165CA59100D9A5D7 /* libRTSPClientView-i386.a */,
+				8CCA0C93165CA59200D9A5D7 /* libRTSPClientView.a */,
+				8C67030E165B5E6F0034EAE7 /* libdl.dylib */,
+				8C67030C165B5E690034EAE7 /* libz.1.2.5.dylib */,
+				8C670300165B5E0B0034EAE7 /* RTSPClientView */,
+				8CCA0C03165B600500D9A5D7 /* RTSPClient */,
+				8C6702FD165B5E0B0034EAE7 /* Frameworks */,
+				8C6702FC165B5E0B0034EAE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C6702FC165B5E0B0034EAE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C6702FB165B5E0B0034EAE7 /* libRTSPClientView.a */,
+				8CCA0BFC165B600500D9A5D7 /* RTSPClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C6702FD165B5E0B0034EAE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C6702FE165B5E0B0034EAE7 /* Foundation.framework */,
+				8CCA0BFE165B600500D9A5D7 /* UIKit.framework */,
+				8CCA0C01165B600500D9A5D7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C670300165B5E0B0034EAE7 /* RTSPClientView */ = {
+			isa = PBXGroup;
+			children = (
+				8C670303165B5E0B0034EAE7 /* RTSPClientView.h */,
+				8C670305165B5E0B0034EAE7 /* RTSPClientView.m */,
+				8C670301165B5E0B0034EAE7 /* Supporting Files */,
+			);
+			path = RTSPClientView;
+			sourceTree = "<group>";
+		};
+		8C670301165B5E0B0034EAE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C670302165B5E0B0034EAE7 /* RTSPClientView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CCA0C03165B600500D9A5D7 /* RTSPClient */ = {
+			isa = PBXGroup;
+			children = (
+				8CCA0C0C165B600500D9A5D7 /* AppDelegate.h */,
+				8CCA0C0D165B600500D9A5D7 /* AppDelegate.m */,
+				8CCA0C15165B600500D9A5D7 /* MainStoryboard_iPhone.storyboard */,
+				8CCA0C18165B600500D9A5D7 /* MainStoryboard_iPad.storyboard */,
+				8CCA0C1B165B600500D9A5D7 /* ViewController.h */,
+				8CCA0C1C165B600500D9A5D7 /* ViewController.m */,
+				8CCA0C04165B600500D9A5D7 /* Supporting Files */,
+			);
+			path = RTSPClient;
+			sourceTree = "<group>";
+		};
+		8CCA0C04165B600500D9A5D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CCA0C05165B600500D9A5D7 /* RTSPClient-Info.plist */,
+				8CCA0C06165B600500D9A5D7 /* InfoPlist.strings */,
+				8CCA0C09165B600500D9A5D7 /* main.m */,
+				8CCA0C0B165B600500D9A5D7 /* RTSPClient-Prefix.pch */,
+				8CCA0C0F165B600500D9A5D7 /* Default.png */,
+				8CCA0C11165B600500D9A5D7 /* Default@2x.png */,
+				8CCA0C13165B600500D9A5D7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C6702FA165B5E0B0034EAE7 /* RTSPClientView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C670309165B5E0B0034EAE7 /* Build configuration list for PBXNativeTarget "RTSPClientView" */;
+			buildPhases = (
+				8C6702F7165B5E0B0034EAE7 /* Sources */,
+				8C6702F8165B5E0B0034EAE7 /* Frameworks */,
+				8C6702F9165B5E0B0034EAE7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RTSPClientView;
+			productName = RTSPClientView;
+			productReference = 8C6702FB165B5E0B0034EAE7 /* libRTSPClientView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8CCA0BFB165B600500D9A5D7 /* RTSPClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CCA0C1E165B600500D9A5D7 /* Build configuration list for PBXNativeTarget "RTSPClient" */;
+			buildPhases = (
+				8CCA0BF8165B600500D9A5D7 /* Sources */,
+				8CCA0BF9165B600500D9A5D7 /* Frameworks */,
+				8CCA0BFA165B600500D9A5D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RTSPClient;
+			productName = RTSPClient;
+			productReference = 8CCA0BFC165B600500D9A5D7 /* RTSPClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C6702F2165B5E0B0034EAE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = com.jhsys;
+			};
+			buildConfigurationList = 8C6702F5165B5E0B0034EAE7 /* Build configuration list for PBXProject "RTSPClientView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8C6702F0165B5E0B0034EAE7;
+			productRefGroup = 8C6702FC165B5E0B0034EAE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C6702FA165B5E0B0034EAE7 /* RTSPClientView */,
+				8CCA0BFB165B600500D9A5D7 /* RTSPClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CCA0BFA165B600500D9A5D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCA0C08165B600500D9A5D7 /* InfoPlist.strings in Resources */,
+				8CCA0C10165B600500D9A5D7 /* Default.png in Resources */,
+				8CCA0C12165B600500D9A5D7 /* Default@2x.png in Resources */,
+				8CCA0C14165B600500D9A5D7 /* Default-568h@2x.png in Resources */,
+				8CCA0C17165B600500D9A5D7 /* MainStoryboard_iPhone.storyboard in Resources */,
+				8CCA0C1A165B600500D9A5D7 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C6702F7165B5E0B0034EAE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C670306165B5E0B0034EAE7 /* RTSPClientView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCA0BF8165B600500D9A5D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC6F80C16673D5400FC98BD /* RTSPClientView.m in Sources */,
+				8CCA0C0A165B600500D9A5D7 /* main.m in Sources */,
+				8CCA0C0E165B600500D9A5D7 /* AppDelegate.m in Sources */,
+				8CCA0C1D165B600500D9A5D7 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8CCA0C06165B600500D9A5D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CCA0C07165B600500D9A5D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8CCA0C15165B600500D9A5D7 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CCA0C16165B600500D9A5D7 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		8CCA0C18165B600500D9A5D7 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CCA0C19165B600500D9A5D7 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C670307165B5E0B0034EAE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		8C670308165B5E0B0034EAE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		8C67030A165B5E0B0034EAE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RTSPClientView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RTSPClientView/RTSPClientView-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/lib/ffmpeg\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8C67030B165B5E0B0034EAE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RTSPClientView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RTSPClientView/RTSPClientView-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/lib/ffmpeg\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8CCA0C1F165B600500D9A5D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RTSPClient/RTSPClient-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
+				INFOPLIST_FILE = "RTSPClient/RTSPClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/lib/ffmpeg\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8CCA0C20165B600500D9A5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RTSPClient/RTSPClient-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
+				INFOPLIST_FILE = "RTSPClient/RTSPClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/lib/ffmpeg\"";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C6702F5165B5E0B0034EAE7 /* Build configuration list for PBXProject "RTSPClientView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C670307165B5E0B0034EAE7 /* Debug */,
+				8C670308165B5E0B0034EAE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C670309165B5E0B0034EAE7 /* Build configuration list for PBXNativeTarget "RTSPClientView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C67030A165B5E0B0034EAE7 /* Debug */,
+				8C67030B165B5E0B0034EAE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CCA0C1E165B600500D9A5D7 /* Build configuration list for PBXNativeTarget "RTSPClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CCA0C1F165B600500D9A5D7 /* Debug */,
+				8CCA0C20165B600500D9A5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C6702F2165B5E0B0034EAE7 /* Project object */;
+}
